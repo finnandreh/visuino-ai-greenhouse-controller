@@ -1,0 +1,13 @@
+{
+  "status": "COMPILED_CANDIDATE_NOT_RUNTIME_VERIFIED",
+  "visuino_version": "8.0.0.169",
+  "board": "arduino:avr:uno",
+  "flash_bytes": 23802,
+  "static_ram_bytes": 1059,
+  "native_hex_sha256": "c007a3d47cea9f47ed5ed0efb005a95876fe1d68c1f49e37a8202a0fd094cdb6",
+  "runtime_matrix": "32 NOT_RUN",
+  "boundary_cases": "30 NOT_RUN",
+  "drawing_connectivity": "27nets29parts216segments",
+  "native_drawing_open": "Routing completed",
+  "distribution": "WORK_IN_PROGRESS_SOURCE_NO_RELEASE"
+}
