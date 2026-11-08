@@ -1,12 +1,12 @@
 {
-  "status": "COMPILED_CANDIDATE_NOT_RUNTIME_VERIFIED",
+  "status": "RUNTIME_MEASURED_SOURCE_REPAIR_REQUIRED",
   "visuino_version": "8.0.0.169",
   "board": "arduino:avr:uno",
   "flash_bytes": 23808,
   "static_ram_bytes": 1059,
   "native_hex_sha256": "56fd2e2d5d574f71259e4ce30fcdc193be943e82a166b27d5bd6a24cad518378",
-  "runtime_matrix": "32 NOT_RUN",
-  "boundary_cases": "30 NOT_RUN",
+  "runtime_matrix": "28 PASS, 3 FAIL, 1 NOT_RUN",
+  "boundary_cases": "29 PASS, 1 FAIL, 0 NOT_RUN",
   "drawing_connectivity": "27nets29parts216segments",
   "native_drawing_open": "Routing completed",
   "distribution": "WORK_IN_PROGRESS_SOURCE_NO_RELEASE",
@@ -14,5 +14,12 @@
   "native_source_sha256": "36a0b0d90f6690281db4cb6bf9358aa3a363727904ae47cf977fbdeea78cda79",
   "generated_ino_sha256": "ec672bb3b425011bfc8bf158d5aa29d77bcedc749e75c30e4c9f4ae0b05ec343",
   "provenance": "from-empty recorded rebuild, native compile8November2026",
-  "publication_scope": "Work-in-progress source only; actual recorded native compile passed, full generated-firmware runtime tests not run"
+  "publication_scope": "Work-in-progress recorded baseline source and measured simulator evidence; fourfailedrequirements and oneunrunrollover row preventcompletedrelease",
+  "runtime_summary": {
+    "PASS": 57,
+    "FAIL": 4,
+    "NOT_RUN": 1
+  },
+  "runtime_environment": "Exact compiled firmware in avr8js16MHz simulator; physicalhardware nottested",
+  "runtime_evidence": "tests/BASELINE-RESULTS.json"
 }
