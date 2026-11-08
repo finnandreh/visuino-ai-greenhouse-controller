@@ -1,8 +1,10 @@
-# Greenhouse bench wiring — draft
+# Greenhouse bench wiring - measured baseline
 
-This is the wiring companion for the editable `Greenhouse-Wiring-DRAFT.fzz`.
-The complete greenhouse candidate compiles in native Visuino; actual Lab tests are pending. The seven LEDs
-represent actuator commands. No pumps, valves, heaters or mains loads are wired.
+This is the wiring companion for the editable `Greenhouse.fzz`.
+The original recorded greenhouse program compiles in native Visuino. Its full Lab
+baseline measured 57 PASS, 4 FAIL and 1 NOT_RUN. This is a work-in-progress
+baseline, not a fully qualified controller. The seven LEDs represent actuator
+commands. No pumps, valves, heaters or mains loads are wired.
 
 1. Place the Uno and establish the shared 5 V and GND connections shown in the
    drawing. Use the module labels rather than assuming a connector order.
@@ -19,7 +21,8 @@ represent actuator commands. No pumps, valves, heaters or mains loads are wired.
 5. Connect both I2C devices to the shared bus: SDA to A4 and SCL to A5, with
    common supply and ground. The intended addresses are LCD 0x27 and DS3231
    0x68. Actual backpack addresses and board electrical details must be checked.
-   The DS3231 Lab model is still a pending dependency.
+   RTC and LCD operation were exercised in the private Lab candidate. This does
+   not establish that every public Lab deployment includes the same support.
 6. Connect the mode switch D3, manual-zone buttons D4/D5 and empty-source
    switch D6 to GND when asserted. The final firmware must enable their internal
    pull-ups. Thus open/high means AUTO for D3, and closed/low means MANUAL;
@@ -34,5 +37,10 @@ blue digital inputs, orange output chains. Wire crossings do not imply a
 connection; the native connectors and static net report define connectivity.
 
 Keep three checks distinct: native Fritzing opening/routing, static net
-verification, and actual generated firmware execution. Only the first two have
-evidence at this stage. Physical calibration and load operation are untested.
+verification, and execution of the actual generated firmware. The recorded
+baseline has measured firmware results, including known timing and output
+transition failures. A later native output-guard revision measured 60 PASS and
+2 FAIL. A focused queued-DHT experiment passed, but its native integration and
+complete final test matrix are still pending. These revisions must not be
+confused with the original downloadable baseline. Physical calibration and
+load operation remain untested.
