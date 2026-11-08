@@ -2,7 +2,7 @@
 
 A modular Arduino Uno teaching project with two-zone irrigation, an empty-reservoir stop, manual requests, temperature-controlled heating and ventilation, daylight-compensating grow light, a daily lighting window, alarms and a 20 × 4 I2C display. Seven indicator commands represent the actuators. Heating responds to temperature; darkness alone never requests heat.
 
-The corrected 93-component native v3 is simulator-qualified: **32 functional requirements and 30 boundary checks pass**, with separate unchanged-program timer-wrap evidence. An ordinary browser Build/Run produces the exact native firmware. The Lab candidate also passes its complete 971-test regression. The edited video and Instructables article are still in preparation.
+The corrected 93-component native v3 is simulator-qualified: **32 functional requirements and 30 boundary checks pass**, with separate unchanged-program timer-wrap evidence. An ordinary browser Build/Run produces the exact native firmware. The Lab candidate also passes its complete 971-test regression. The complete build video is published. The Instructables article has been submitted and is awaiting platform review.
 
 ## Download and build
 
@@ -39,4 +39,14 @@ These tests execute actual compiled AVR firmware with simulated devices in a pri
 - Project repository: https://github.com/finnandreh/visuino-ai-greenhouse-controller
 - Project page: https://finnandre.no/ressurser/visuino-ai-drivhus/
 
-Final video and Instructables links will be added after review and publication. Drawing attribution does not grant a license to proprietary vendor software, trademarks, music or video. Credentials, private infrastructure records and raw private recordings are excluded.
+The published video and submitted Instructables article are linked below. Drawing attribution does not grant a license to proprietary vendor software, trademarks, music or video. Credentials, private infrastructure records and raw private recordings are excluded.
+
+
+## Video and step-by-step guide
+
+- [Watch the build video](https://www.youtube.com/watch?v=8CP_ukaz4Ns)
+- [Project page and downloads](https://finnandre.no/ressurser/visuino-ai-drivhus/)
+- [Step-by-step Instructables guide](https://www.instructables.com/Build-a-Modular-Greenhouse-Controller-With-Visuino/) — submitted; platform review pending.
+- [Watch the complete native Facebook video](https://www.facebook.com/reel/1108117152097081/)
+
+The video demonstrates simulated firmware behavior; physical greenhouse hardware has not been tested.
