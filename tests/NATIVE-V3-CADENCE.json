@@ -1,0 +1,145 @@
+{
+  "state": "FOCUSED_GATE_PASS_SEE_NATIVE_V3_RUNTIME_SUMMARY_FOR_MATRIX",
+  "evidence_class": "Actual compiled AVR firmware with a simulated DHT22 protocol model; not physicalhardware",
+  "artifact": {
+    "hexSha256": "45301412c8b44438588d6dbce98a70dbc4db50c9e7fe3ee99ebfba83e5d3605a",
+    "sourceRawSha256": "5b9ef9157e958cba8b083680971e7e660255a80467d8eea3bb83dd5af2c7557b",
+    "sourceNormalizedSha256": "2e6932fe6eab2bf9aa00aa990acad3118564238ec3e891a600170aa36bd2f8d6",
+    "adapterSha256": "dfb142ef58b199b04fb20d2d760d419c71ffa0054587d1861c82bab0a53e4de1"
+  },
+  "requirement": {
+    "minimumTransactions": 6,
+    "cadenceMs": 2000,
+    "toleranceMs": 100
+  },
+  "transactions": [
+    {
+      "ordinal": 1,
+      "startCycle": 38201951,
+      "releaseCycle": 38534693,
+      "responseStartCycle": 38535013,
+      "responseEndCycle": 38597701,
+      "startPulseCycles": 332742,
+      "startMs": 2387.6219375,
+      "responseDurationUs": 3918,
+      "temperatureC": 18,
+      "humidityPercent": 50,
+      "payload": [
+        1,
+        244,
+        0,
+        180,
+        169
+      ],
+      "checksumValid": true
+    },
+    {
+      "ordinal": 2,
+      "startCycle": 70205143,
+      "releaseCycle": 70531765,
+      "responseStartCycle": 70532085,
+      "responseEndCycle": 70594773,
+      "startPulseCycles": 326622,
+      "startMs": 4387.8214375,
+      "responseDurationUs": 3918,
+      "temperatureC": 18,
+      "humidityPercent": 50,
+      "payload": [
+        1,
+        244,
+        0,
+        180,
+        169
+      ],
+      "checksumValid": true
+    },
+    {
+      "ordinal": 3,
+      "startCycle": 102302235,
+      "releaseCycle": 102627151,
+      "responseStartCycle": 102627471,
+      "responseEndCycle": 102690159,
+      "startPulseCycles": 324916,
+      "startMs": 6393.8896875,
+      "responseDurationUs": 3918,
+      "temperatureC": 18,
+      "humidityPercent": 50,
+      "payload": [
+        1,
+        244,
+        0,
+        180,
+        169
+      ],
+      "checksumValid": true
+    },
+    {
+      "ordinal": 4,
+      "startCycle": 134354898,
+      "releaseCycle": 134669310,
+      "responseStartCycle": 134669630,
+      "responseEndCycle": 134732318,
+      "startPulseCycles": 314412,
+      "startMs": 8397.181125,
+      "responseDurationUs": 3918,
+      "temperatureC": 18,
+      "humidityPercent": 50,
+      "payload": [
+        1,
+        244,
+        0,
+        180,
+        169
+      ],
+      "checksumValid": true
+    },
+    {
+      "ordinal": 5,
+      "startCycle": 166640320,
+      "releaseCycle": 166963373,
+      "responseStartCycle": 166963693,
+      "responseEndCycle": 167026381,
+      "startPulseCycles": 323053,
+      "startMs": 10415.02,
+      "responseDurationUs": 3918,
+      "temperatureC": 18,
+      "humidityPercent": 50,
+      "payload": [
+        1,
+        244,
+        0,
+        180,
+        169
+      ],
+      "checksumValid": true
+    },
+    {
+      "ordinal": 6,
+      "startCycle": 198672069,
+      "releaseCycle": 198995047,
+      "responseStartCycle": 198995367,
+      "responseEndCycle": 199058055,
+      "startPulseCycles": 322978,
+      "startMs": 12417.0043125,
+      "responseDurationUs": 3918,
+      "temperatureC": 18,
+      "humidityPercent": 50,
+      "payload": [
+        1,
+        244,
+        0,
+        180,
+        169
+      ],
+      "checksumValid": true
+    }
+  ],
+  "startToStartSpacingsMs": [
+    2000.1995,
+    2006.06825,
+    2003.2914375,
+    2017.838875,
+    2001.9843125
+  ],
+  "result": "PASS"
+}

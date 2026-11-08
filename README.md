@@ -1,39 +1,42 @@
 # Visuino AI Greenhouse Controller
 
-**Work in progress — measured baseline: 57 PASS, 4 FAIL, 1 NOT_RUN. Source corrections are still being tested.**
+A modular Arduino Uno teaching project with two-zone irrigation, an empty-reservoir stop, manual requests, temperature-controlled heating and ventilation, daylight-compensating grow light, a daily lighting window, alarms and a 20 × 4 I2C display. Seven indicator commands represent the actuators. Heating responds to temperature; darkness alone never requests heat.
 
-A modular Arduino Uno teaching project: two-zone irrigation, source-empty protection, manual/automatic operation, independent temperature and grow-light control, DS3231 clock guard, combined alarm and20x4 I2C display. Bench LEDs represent commands.
+The corrected 93-component native v3 is simulator-qualified: **32 functional requirements and 30 boundary checks pass**, with separate unchanged-program timer-wrap evidence. An ordinary browser Build/Run produces the exact native firmware. The Lab candidate also passes its complete 971-test regression. The edited video and Instructables article are still in preparation.
 
-## Current verification
+## Download and build
 
-This candidate is the complete 92-component project rebuilt from empty during recording. It compiles successfully with Visuino8.0.0.169 for Uno:23808bytes flash and1059bytes staticRAM, leaving989bytes for the runtime stack and heap. Source SHA256:36a0b0d90f6690281db4cb6bf9358aa3a363727904ae47cf977fbdeea78cda79. Loadable HEX SHA256:56fd2e2d5d574f71259e4ce30fcdc193be943e82a166b27d5bd6a24cad518378. This is a different build from the earlier reference candidate; it has not yet passed whole-program Lab execution.
+1. Install the [project-owned DHT library ZIP](downloads/FinnGreenhouseDHTClock-0.1.0.zip) using the [installation instructions](libraries/FinnGreenhouseDHTClock/README.md).
+2. Open [Greenhouse.visuino](Greenhouse.visuino) in Visuino Pro 8.0.0.169 with its matching licensed dependencies.
+3. Inspect the [behavior contract](BEHAVIOR-CONTRACT.md) and [wiring guide](wiring/WIRING-GUIDE.md), then generate and compile for Arduino Uno R3.
+4. The actual [generated sketch](Greenhouse/Greenhouse.ino) is included. Its header preserves the original generator filename for provenance.
 
-The exact baseline has now been compiled through the Lab toolchain and executed in a private simulator candidate. Its ordinary-build HEX matches the native build byte for byte. All 32 functional and 30 boundary rows were classified: **57 PASS, 4 FAIL, 1 NOT_RUN**. The [measured baseline results](tests/BASELINE-RESULTS.json) contain row-specific UART, GPIO, ADC, I2C, LCD and timing evidence. The CSV files remain the test definitions; their original planning status is not the measured result.
+Keep DHT22 DATA on D7 with its pull-up and set D7 InitialValue=true. The project-owned queued clock retains sensor requests until the existing driver is ready. No licensed vendor library or installer is distributed. The actual downloadable library ZIP was independently extracted and used to rebuild the byte-identical native firmware.
 
-Known baseline defects:
-
-- Fan and heater commands briefly overlap during a transition: 351 simulated CPU cycles, about 21.94 microseconds. This fails GH19 and GH31.
-- Fresh DHT transactions are about 4 seconds apart rather than the required 2 seconds. This fails GH29 and the climate-recovery boundary case.
-- GH32 rollover remains NOT_RUN for this baseline because a supported near-rollover clock fixture was not available in that run.
-
-A separately recorded output guard is being retested. A separate DHT scheduling prototype has compiled but has not run in the Lab. Their results are not attributed to the source files currently published here. The baseline is not a completed controller release. RTC/LCD support was exercised in this private candidate; that does not establish availability in a public Lab service. Runtime stack headroom and physical sensor/load operation are not established. The final greenhouse video and public Instructables article are not yet available. The [homepage project page](https://finnandre.no/ressurser/visuino-ai-drivhus/) remains a work-in-progress overview.
-
-## Files and tools
-
-Open Greenhouse.visuino in the matching installed Visuino version. The generated Arduino sketch is Greenhouse/Greenhouse.ino. It requires the matching vendor-supplied Visuino/Mitov and OpenWire dependencies installed under their own licenses; no vendor headers, libraries or installers are bundled. The .ino header retains the original generator source filename for provenance.
-
-![Labeled greenhouse connection guide](wiring/Greenhouse-breadboard.png)
-
-Open wiring/Greenhouse.fzz in Fritzing. Native Routing completed and static connectivity checks cover27nets/29parts/216wiresegments. Those checks establish drawing connectivity, not physical operation. Inspect actual module labels before adapting the illustrative DHT/LCD interfaces.
+The build uses **24,238 bytes flash and 1,069 bytes static RAM**, leaving 979 bytes before runtime stack/heap use. See [build status and artifact hashes](BUILD-STATUS.json).
 
 ## Wiring
 
-D2pump;D3mode(HIGH=AUTO);D4/D5manual requests(activeLOW);D6empty(activeLOW);D7DHT22data;D8/D9valves;D10fan;D11heater;D12growlight;D13alarm. D3..D6 use internal pull-ups. A0/A1soil,A2outside light,A3inside light,A4SDA/A5SCL. LCD0x27/RTC0x68 share I2C. D0/D1UART115200. Full steps are in wiring/WIRING-GUIDE.md.
+- [Editable Fritzing drawing](wiring/Greenhouse.fzz)
+- [Breadboard image](wiring/Greenhouse-breadboard.png) and [vector export](wiring/Greenhouse-breadboard.svg)
+- [Step-by-step connections and pin mapping](wiring/WIRING-GUIDE.md)
+- [Drawing authors and license](wiring/ATTRIBUTION.md)
 
-## Behavior and tests
+The LCD at 0x27 and DS3231 at 0x68 share A4/A5. Soil and light values are relative ADC measurements. The drawing is a breadboard teaching layout; no PCB design is supplied.
 
-See BEHAVIOR-CONTRACT.md for exact thresholds, run/rest/reset guards, climate validity and clock/light permissions. Heating follows temperature independently of darkness. The test CSVs define required actual-firmware observations; a successful compile is not a substitute. ADC percentages are relative teaching scales, not calibrated moisture/lux. No physical pump/heater/load-driving hardware is demonstrated.
+## What was verified
 
-## Attribution and distribution
+- [Final exact-program qualification](tests/NATIVE-V3-QUALIFICATION.json): native/ordinary firmware match, browser controls, LCD, timing and regression scope.
+- [All 62 requirement results](tests/NATIVE-V3-RUNTIME-SUMMARY.json): individual IDs and measured evidence categories.
+- [Six cold-boot sensor transactions](tests/NATIVE-V3-CADENCE.json): all five measured intervals meet 2000 ±100 ms.
 
-Drawing artwork and custom interfaces: see wiring/ATTRIBUTION.md for existing CC BY-SA3.0 terms and original part authors. This does not license proprietary vendor software or trademarks. No additional software license is asserted by this candidate package. Internal infrastructure documents, private libraries, credentials, chat history and raw recordings are excluded.
+The raw functional matrix retains GH32 as NOT_RUN. A separate fresh fixture verifies the unchanged program across unsigned timer wrap under the original minimum-five-second dwell contract, supplying its effective PASS. The 4999 ms scan holds the light; the first eligible 5050 ms scan switches it off. Earlier failed results remain historical evidence. [BASELINE-RESULTS.json](tests/BASELINE-RESULTS.json) belongs to the older 92-component baseline and must not be used as the current result.
+
+These tests execute actual compiled AVR firmware with simulated devices in a private Lab candidate. Public Lab deployment compatibility is a separate check. Physical sensor accuracy, real pumps/heaters/load drivers, crop suitability and runtime stack headroom require their own verification.
+
+## Project links
+
+- Project repository: https://github.com/finnandreh/visuino-ai-greenhouse-controller
+- Project page: https://finnandre.no/ressurser/visuino-ai-drivhus/
+
+Final video and Instructables links will be added after review and publication. Drawing attribution does not grant a license to proprietary vendor software, trademarks, music or video. Credentials, private infrastructure records and raw private recordings are excluded.

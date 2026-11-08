@@ -1,0 +1,68 @@
+{
+  "state": "EXACT_NATIVE_V3_SIMULATOR_QUALIFICATION_PASS",
+  "artifact": {
+    "native_project_sha256": "a146ba5010f8d7a95b69e235e4212add0dd842465e89b4c24ea25b46b19b33df",
+    "generated_sketch_sha256": "5b9ef9157e958cba8b083680971e7e660255a80467d8eea3bb83dd5af2c7557b",
+    "native_and_ordinary_hex_sha256": "45301412c8b44438588d6dbce98a70dbc4db50c9e7fe3ee99ebfba83e5d3605a"
+  },
+  "evidence_class": "Actual compiled AVR firmware executing with simulated device protocols, GPIO, ADC, UART and I2C",
+  "functional": {
+    "pass": 32,
+    "fail": 0,
+    "not_run": 0
+  },
+  "boundary": {
+    "pass": 30,
+    "fail": 0,
+    "not_run": 0
+  },
+  "gh32": {
+    "original_raw_matrix_status": "NOT_RUN",
+    "separate_supplement": "PASS",
+    "contract": "Minimum 5000 ms dwell, 20 Hz scan, no early transition; deadline plus100 ms and one measured loop",
+    "prior_scan_ms": 4999,
+    "first_eligible_scan_ms": 5050,
+    "physical_output_edge_ms": 5049.5204375,
+    "unchanged_program": true,
+    "fixture": "One-time timer0 seed at main entry, followed by normal timer interrupts across unsigned wrap"
+  },
+  "ordinary_browser_build_run": {
+    "actual_builds": 1,
+    "native_hex_byte_match": true,
+    "successful_dht_transactions": 6,
+    "dht_spacing_ms": [
+      2005.5119375,
+      2002.454875,
+      2003.3314375,
+      2002.602875,
+      2003.13
+    ],
+    "visible_analog_controls": "Soil A0/A1, outside light A2, inside light A3",
+    "visible_clock_controls": "DS3231 time and reversible frozen/disconnected/none fault controls",
+    "final_lcd": [
+      "A READY",
+      "T:18.0C H:50%",
+      "S1: 60% S2: 60%",
+      "I80 O80 L0 15:42"
+    ],
+    "unsupported_records": 0,
+    "page_errors": 0,
+    "outside_requests": 0
+  },
+  "lab_candidate_regression": {
+    "pass": 971,
+    "fail": 0
+  },
+  "scope_limits": [
+    "Private Lab candidate; public Lab deployment support must be checked separately.",
+    "Sensor protocol simulation does not prove physical sensor accuracy or actuator/load-driver safety.",
+    "The timer fixture is not 49 days of natural uptime.",
+    "Video review, article publication and final links remain in preparation."
+  ],
+  "provenance_hashes": {
+    "final_acceptance": "03d6c26e562a51a30f46eef3679f8bd9a545c674be9c6088054bde4c1b758eb1",
+    "final_evidence_manifest": "532902ecb39e6c00cccada1c320c416f2bb35b9c3a256f6edf17431c4bf58222",
+    "browser_report": "fbd2324062f91c79d478ea270f0f53aba98a2bf018e6538cf95fad76e9330ca0",
+    "regression_log": "11d3c31de6126ee41e3dbd9851fdf92a61e1734020d3ab10da3d97692cb302c6"
+  }
+}

@@ -1,0 +1,568 @@
+{
+  "state": "CORE_SIMULATOR_RESULTS_PASS_SEE_NATIVE_V3_QUALIFICATION_FOR_BROWSER",
+  "evidence_class": "actual-compiled-firmware-uart-gpio-adc-i2c-runtime",
+  "physical_hardware_tested": false,
+  "hex_sha256": "45301412c8b44438588d6dbce98a70dbc4db50c9e7fe3ee99ebfba83e5d3605a",
+  "runtime_engine": "avr8js",
+  "clock_hz": 16000000,
+  "functional": [
+    {
+      "id": "GH01",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "uart-gpio-startup"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH02",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "uart-gpio"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH03",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "uart-gpio"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH04",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "uart-round-robin"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH05",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "measured-hysteresis"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH06",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "uart-rest"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH07",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "debounced-manual-uart-gpio"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH08",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "manual-arbitration"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH09",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "debounced-source-uart-gpio"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH10",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "manual-source-loss"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH11",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "manual-rearm-rest"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH12",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "latched-timeout"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH13",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "reset-release-rearm"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH14",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "mode-debounce-uart"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH15",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "dht-gpio"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH16",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "dht-gpio-rtc"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH17",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "adc-dht-gpio-dwell"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH18",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "dht-gpio"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH19",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "dht-hysteresis-gpio-trace",
+        "focused-guard-cpu-cycle-gpio-lcd"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH20",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "overtemperature-gpio"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH21",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "climate-fault-gpio"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH22",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "light-hysteresis-dwell-uart"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH23",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "independent-adc-uart"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH24",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "rtc-photoperiod"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH25",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "rtc-photoperiod"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH26",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "rtc-fault-recovery"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH27",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "i2c-rtc-lcd"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH28",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "decoded-i2c-lcd-priority"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH29",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "measured-timing-aggregate"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH30",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "artifact-identity"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH31",
+      "original_status": "PASS",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "all-scenario-uart-gpio-traces"
+      ],
+      "supplement": null
+    },
+    {
+      "id": "GH32",
+      "original_status": "NOT_RUN",
+      "effective_status": "PASS",
+      "evidence_kinds": [
+        "runtime-limit"
+      ],
+      "supplement": "Unchanged firmware, separately measured unsigned timer wrap and first eligible 20 Hz scan under the original minimum 5000 ms contract"
+    }
+  ],
+  "boundary": [
+    {
+      "id": "GH05/soil_dry_lower",
+      "status": "PASS",
+      "evidence_kinds": [
+        "adc-uart-gpio"
+      ]
+    },
+    {
+      "id": "GH05/soil_dry_upper",
+      "status": "PASS",
+      "evidence_kinds": [
+        "adc-uart"
+      ]
+    },
+    {
+      "id": "GH05/soil_wet_lower",
+      "status": "PASS",
+      "evidence_kinds": [
+        "adc-uart"
+      ]
+    },
+    {
+      "id": "GH05/soil_wet_upper",
+      "status": "PASS",
+      "evidence_kinds": [
+        "adc-uart-gpio"
+      ]
+    },
+    {
+      "id": "GH19/heater_set",
+      "status": "PASS",
+      "evidence_kinds": [
+        "dht-gpio"
+      ]
+    },
+    {
+      "id": "GH19/heater_clear",
+      "status": "PASS",
+      "evidence_kinds": [
+        "dht-gpio"
+      ]
+    },
+    {
+      "id": "GH19/fan_set",
+      "status": "PASS",
+      "evidence_kinds": [
+        "dht-gpio"
+      ]
+    },
+    {
+      "id": "GH19/fan_clear",
+      "status": "PASS",
+      "evidence_kinds": [
+        "dht-gpio"
+      ]
+    },
+    {
+      "id": "GH20/overtemp_set",
+      "status": "PASS",
+      "evidence_kinds": [
+        "dht-gpio"
+      ]
+    },
+    {
+      "id": "GH20/overtemp_clear",
+      "status": "PASS",
+      "evidence_kinds": [
+        "dht-gpio"
+      ]
+    },
+    {
+      "id": "GH21/climate_stale",
+      "status": "PASS",
+      "evidence_kinds": [
+        "dht-deadline-gpio"
+      ]
+    },
+    {
+      "id": "GH21/climate_stale_boundary",
+      "status": "PASS",
+      "evidence_kinds": [
+        "dht-deadline-gpio-trace"
+      ]
+    },
+    {
+      "id": "GH21/climate_recovery",
+      "status": "PASS",
+      "evidence_kinds": [
+        "dht-recovery"
+      ]
+    },
+    {
+      "id": "GH22/light_low_lower",
+      "status": "PASS",
+      "evidence_kinds": [
+        "adc-rtc-uart-gpio"
+      ]
+    },
+    {
+      "id": "GH22/light_low_upper",
+      "status": "PASS",
+      "evidence_kinds": [
+        "adc-rtc-uart"
+      ]
+    },
+    {
+      "id": "GH22/light_high_lower",
+      "status": "PASS",
+      "evidence_kinds": [
+        "adc-rtc-uart"
+      ]
+    },
+    {
+      "id": "GH22/light_high_upper",
+      "status": "PASS",
+      "evidence_kinds": [
+        "adc-rtc-uart-dwell"
+      ]
+    },
+    {
+      "id": "GH24/day_before",
+      "status": "PASS",
+      "evidence_kinds": [
+        "rtc-uart-gpio"
+      ]
+    },
+    {
+      "id": "GH24/day_start",
+      "status": "PASS",
+      "evidence_kinds": [
+        "rtc-uart-gpio"
+      ]
+    },
+    {
+      "id": "GH25/day_last",
+      "status": "PASS",
+      "evidence_kinds": [
+        "rtc-uart-gpio"
+      ]
+    },
+    {
+      "id": "GH25/day_end",
+      "status": "PASS",
+      "evidence_kinds": [
+        "rtc-uart-gpio"
+      ]
+    },
+    {
+      "id": "GH26/clock_stale_before",
+      "status": "PASS",
+      "evidence_kinds": [
+        "rtc-frozen-uart"
+      ]
+    },
+    {
+      "id": "GH26/clock_stale_boundary",
+      "status": "PASS",
+      "evidence_kinds": [
+        "rtc-frozen-uart-gpio"
+      ]
+    },
+    {
+      "id": "GH26/clock_recovery",
+      "status": "PASS",
+      "evidence_kinds": [
+        "rtc-reacquisition-uart-off-dwell"
+      ]
+    },
+    {
+      "id": "GH12/timeout_before",
+      "status": "PASS",
+      "evidence_kinds": [
+        "uart-deadline"
+      ]
+    },
+    {
+      "id": "GH12/timeout_boundary",
+      "status": "PASS",
+      "evidence_kinds": [
+        "uart-deadline"
+      ]
+    },
+    {
+      "id": "GH06/rest_before",
+      "status": "PASS",
+      "evidence_kinds": [
+        "uart-deadline"
+      ]
+    },
+    {
+      "id": "GH06/rest_boundary",
+      "status": "PASS",
+      "evidence_kinds": [
+        "uart-deadline"
+      ]
+    },
+    {
+      "id": "GH13/reset_before",
+      "status": "PASS",
+      "evidence_kinds": [
+        "uart-reset-hold"
+      ]
+    },
+    {
+      "id": "GH13/reset_boundary",
+      "status": "PASS",
+      "evidence_kinds": [
+        "uart-reset-hold"
+      ]
+    }
+  ],
+  "effective_counts": {
+    "functional_pass": 32,
+    "boundary_pass": 30
+  },
+  "guard_transitions": [
+    {
+      "label": "heat-to-fan",
+      "break_before_make": true,
+      "no_overlap": true
+    },
+    {
+      "label": "fan-to-heat",
+      "break_before_make": true,
+      "no_overlap": true
+    },
+    {
+      "label": "heating-to-stale-fan",
+      "break_before_make": true,
+      "no_overlap": true
+    },
+    {
+      "label": "stale-fan-to-recovered-heat",
+      "break_before_make": true,
+      "no_overlap": true
+    }
+  ],
+  "gh32_supplement_acceptance": {
+    "restAcrossWrapPreserved": true,
+    "resetAcrossWrapPreserved": true,
+    "clockFreshAndPermissionValid": true,
+    "crossedWrap": true,
+    "noOrdinaryGpioTransitionBeforeMinimum": true,
+    "transitionOnFirstActualEligibleScan": true,
+    "actualMeasuredPhysicalEdgeRetained": true,
+    "programUnchanged": true
+  },
+  "dht_wrap": {
+    "result": "PASS",
+    "spacings_ms": [
+      2007.3030625,
+      2003.5093125,
+      2004.480875,
+      2003.5434375,
+      2003.165375
+    ],
+    "fixture": "One-time timer0 seed at main entry; executable program unchanged"
+  },
+  "private_source_report_hashes": {
+    "FULL-MATRIX-RUNTIME-RESULT.json": "8b19d47bcaaec9f8c137eb3e484f3d8edbd66280269cef4718596c1c9c066ca5",
+    "GH32-DWELL-CONTRACT-SUPPLEMENT.json": "d43ddb70a3c7829b6f70be8130f99a3d264ea87853c612756414646135ab2e4b",
+    "DHT-ROLLOVER-RESULT.json": "a076872b6a86f98a9e3796fac80bb5d41ed73120eca909180878e21e46bf3b58"
+  },
+  "limitations": [
+    "Device protocol simulation is not physical hardware verification.",
+    "Raw matrix retains GH32 NOT_RUN; separate fresh wrap evidence supplies its effective PASS.",
+    "Full-controls ordinary browser Build/Run and candidate regression passed; video and publication remain in preparation."
+  ]
+}

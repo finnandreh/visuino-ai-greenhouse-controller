@@ -1,9 +1,9 @@
-# Greenhouse demonstration behavior — implementation target v1
+# Greenhouse demonstration behavior
 
-These concrete demonstration choices refine SPEC-DRAFT.md. They are the
-implementation and test target, not evidence of an implemented controller.
-Native construction and Uno compilation now have recorded source/build evidence.
-RTC simulation support, actual Lab execution and runtime memory use remain open gates. Preserve the full project scope if a gate fails.
+These are the implementation and test requirements for the greenhouse teaching
+project. Values are demonstration choices, not plant-specific recommendations.
+A behavior contract is not evidence of passing execution. See BUILD-STATUS.json
+and the exact-artifact reports under tests/ for the current qualification.
 
 ## Input interpretation and time
 
@@ -111,8 +111,9 @@ measure from the last successful update/advancement, not from UI manipulation.
 Poll-based simulator controls must report their actual input-application time.
 If the runtime cannot produce that evidence, label timing unverified.
 
-The native implementation, generated source and Lab trace must be checked
-against these rules. TEST-MATRIX.csv remains NOT_RUN until actual observations
-exist. This document neither simulates output nor substitutes for executable
-firmware testing. Final display layout follows the complete-program memory and
-readability review, with four padded 20-character rows and 2 Hz refresh.
+The native project, generated source and Lab trace must be checked against
+these rules. The CSV files under tests/ define required observations; their
+planning labels are separate from measured results. Historical baseline reports
+refer to their own artifact and must not be attributed to a newer source file.
+The display uses four padded20-character rows with2Hz refresh. This document
+does not simulate output or replace executable firmware and physical tests.

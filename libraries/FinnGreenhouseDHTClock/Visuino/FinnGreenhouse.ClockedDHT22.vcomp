@@ -1,0 +1,11 @@
+FinnGreenhouse : Namespace
+    [Name('Greenhouse Clocked DHT22')]
+    [CreateName('ClockedDHT22')]
+    [ArduinoInclude('CadencedDHT22.h')]
+    [ArduinoClass('FinnGreenhouse::CadencedDHT22')]
+    [Category(TArduinoMeasurementTemperatureHumidityToolbarCategory)]
+
+    +TArduinoFinnGreenhouseClockedDHT22: TArduinoBasicDHTSensor
+    ; // TArduinoBasicDHTSensor
+
+; // FinnGreenhouse

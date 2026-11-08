@@ -1,10 +1,11 @@
-# Greenhouse bench wiring - measured baseline
+# Greenhouse bench wiring
 
-This is the wiring companion for the editable `Greenhouse.fzz`.
-The original recorded greenhouse program compiles in native Visuino. Its full Lab
-baseline measured 57 PASS, 4 FAIL and 1 NOT_RUN. This is a work-in-progress
-baseline, not a fully qualified controller. The seven LEDs represent actuator
-commands. No pumps, valves, heaters or mains loads are wired.
+This is the wiring companion for the editable `Greenhouse.fzz`. Its connections
+are shared by the older published baseline and the corrected native project;
+BUILD-STATUS.json in the repository root identifies current firmware status.
+The seven LEDs represent actuator commands. No pumps, valves, heaters or mains
+loads are wired. Install the project-owned clocked DHT component using
+`libraries/FinnGreenhouseDHTClock/README.md` in the repository root.
 
 1. Place the Uno and establish the shared 5 V and GND connections shown in the
    drawing. Use the module labels rather than assuming a connector order.
@@ -18,6 +19,9 @@ commands. No pumps, valves, heaters or mains loads are wired.
 4. Connect DHT22 VCC and GND, DATA to D7, and a 10 kohm pull-up from DATA to
    5 V. Leave NC disconnected. The illustrated four-pin interface is not a
    promise that every packaged DHT module uses the same physical pin order.
+   Keep Arduino Digital[7].InitialValue=true in the supplied native project,
+   so DATA starts high before the DHT driver initializes. Keep the external
+   pull-up and all other saved pin settings unchanged.
 5. Connect both I2C devices to the shared bus: SDA to A4 and SCL to A5, with
    common supply and ground. The intended addresses are LCD 0x27 and DS3231
    0x68. Actual backpack addresses and board electrical details must be checked.
@@ -36,11 +40,9 @@ Drawing colors: red supply, dark grey ground, green analog/SDA, purple SCL,
 blue digital inputs, orange output chains. Wire crossings do not imply a
 connection; the native connectors and static net report define connectivity.
 
-Keep three checks distinct: native Fritzing opening/routing, static net
-verification, and execution of the actual generated firmware. The recorded
-baseline has measured firmware results, including known timing and output
-transition failures. A later native output-guard revision measured 60 PASS and
-2 FAIL. A focused queued-DHT experiment passed, but its native integration and
-complete final test matrix are still pending. These revisions must not be
-confused with the original downloadable baseline. Physical calibration and
-load operation remain untested.
+Keep native Fritzing opening/routing, static net verification and execution of
+the actual generated firmware as separate checks. The drawing verifies no
+physical sensor calibration or load operation. Historical measured baseline
+results stay in tests/BASELINE-RESULTS.json; they describe that older source.
+Use BUILD-STATUS.json and the matching current artifact reports for the new
+program. A passed focused sensor check does not replace the complete matrix.
