@@ -1,6 +1,6 @@
 # Visuino AI Greenhouse Controller
 
-**Work in progress — compiled candidate. Whole-program Lab runtime is not verified.**
+**Work in progress — measured baseline: 57 PASS, 4 FAIL, 1 NOT_RUN. Source corrections are still being tested.**
 
 A modular Arduino Uno teaching project: two-zone irrigation, source-empty protection, manual/automatic operation, independent temperature and grow-light control, DS3231 clock guard, combined alarm and20x4 I2C display. Bench LEDs represent commands.
 
@@ -8,7 +8,15 @@ A modular Arduino Uno teaching project: two-zone irrigation, source-empty protec
 
 This candidate is the complete 92-component project rebuilt from empty during recording. It compiles successfully with Visuino8.0.0.169 for Uno:23808bytes flash and1059bytes staticRAM, leaving989bytes for the runtime stack and heap. Source SHA256:36a0b0d90f6690281db4cb6bf9358aa3a363727904ae47cf977fbdeea78cda79. Loadable HEX SHA256:56fd2e2d5d574f71259e4ce30fcdc193be943e82a166b27d5bd6a24cad518378. This is a different build from the earlier reference candidate; it has not yet passed whole-program Lab execution.
 
-Whole-program Circuit Lab execution, GPIO/timing and runtime memory headroom are NOT VERIFIED. All32matrix checks and30boundary cases remain NOT_RUN. RTC simulation support is a pending dependency. This candidate is not a completed tutorial release. Video and Instructables links are not yet available. The [homepage project page](https://finnandre.no/ressurser/visuino-ai-drivhus/) describes the compiled candidate and its pending runtime tests.
+The exact baseline has now been compiled through the Lab toolchain and executed in a private simulator candidate. Its ordinary-build HEX matches the native build byte for byte. All 32 functional and 30 boundary rows were classified: **57 PASS, 4 FAIL, 1 NOT_RUN**. The [measured baseline results](tests/BASELINE-RESULTS.json) contain row-specific UART, GPIO, ADC, I2C, LCD and timing evidence. The CSV files remain the test definitions; their original planning status is not the measured result.
+
+Known baseline defects:
+
+- Fan and heater commands briefly overlap during a transition: 351 simulated CPU cycles, about 21.94 microseconds. This fails GH19 and GH31.
+- Fresh DHT transactions are about 4 seconds apart rather than the required 2 seconds. This fails GH29 and the climate-recovery boundary case.
+- GH32 rollover remains NOT_RUN for this baseline because a supported near-rollover clock fixture was not available in that run.
+
+A separately recorded output guard is being retested. A separate DHT scheduling prototype has compiled but has not run in the Lab. Their results are not attributed to the source files currently published here. The baseline is not a completed controller release. RTC/LCD support was exercised in this private candidate; that does not establish availability in a public Lab service. Runtime stack headroom and physical sensor/load operation are not established. The final greenhouse video and public Instructables article are not yet available. The [homepage project page](https://finnandre.no/ressurser/visuino-ai-drivhus/) remains a work-in-progress overview.
 
 ## Files and tools
 

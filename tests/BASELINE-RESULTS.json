@@ -1,0 +1,2026 @@
+{
+  "schema": "greenhouse-recorded-baseline-results-v1",
+  "tested_source_commit": "786d1c1cad7ef72d7319e38c50e749c6f641d0f5",
+  "native_project_sha256": "36a0b0d90f6690281db4cb6bf9358aa3a363727904ae47cf977fbdeea78cda79",
+  "generated_source_raw_sha256": "ec672bb3b425011bfc8bf158d5aa29d77bcedc749e75c30e4c9f4ae0b05ec343",
+  "generated_source_lf_sha256": "1af8b1dfc3f251e27bdf6b9170afa1a3899d826241125f6152723e07d60b34dd",
+  "hex_sha256": "56fd2e2d5d574f71259e4ce30fcdc193be943e82a166b27d5bd6a24cad518378",
+  "environment": {
+    "engine": "avr8js",
+    "clock_hz": 16000000,
+    "scenarios": 18
+  },
+  "summary": {
+    "PASS": 57,
+    "FAIL": 4,
+    "NOT_RUN": 1
+  },
+  "matrix": {
+    "counts": {
+      "PASS": 28,
+      "FAIL": 3,
+      "NOT_RUN": 1
+    },
+    "rows": [
+      {
+        "id": "GH01",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "uart-gpio-startup",
+            "gh": {
+              "now": 284,
+              "auto": 1,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            },
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": true
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH02",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "uart-gpio",
+            "gh": {
+              "now": 533,
+              "auto": 1,
+              "source": 1,
+              "dry1": 1,
+              "dry2": 0,
+              "zone": 1,
+              "valve1": 1,
+              "valve2": 0,
+              "pump": 1,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            },
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": true,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": true,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": true
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH03",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "uart-gpio",
+            "gh": {
+              "now": 384,
+              "auto": 1,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 1,
+              "zone": 2,
+              "valve1": 0,
+              "valve2": 1,
+              "pump": 1,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            },
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": true,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": true,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": true
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH04",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "uart-round-robin",
+            "first": {
+              "now": 384,
+              "auto": 1,
+              "source": 1,
+              "dry1": 1,
+              "dry2": 1,
+              "zone": 1,
+              "valve1": 1,
+              "valve2": 0,
+              "pump": 1,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            },
+            "second": {
+              "now": 15483,
+              "auto": 1,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 1,
+              "zone": 2,
+              "valve1": 0,
+              "valve2": 1,
+              "pump": 1,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH05",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "measured-hysteresis",
+            "gh": {
+              "now": 734,
+              "auto": 1,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 1,
+              "inhibit": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH06",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "uart-rest",
+            "before": {
+              "now": 15284,
+              "auto": 1,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 1,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 1,
+              "inhibit": 0
+            },
+            "after": {
+              "now": 15483,
+              "auto": 1,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 1,
+              "zone": 2,
+              "valve1": 0,
+              "valve2": 1,
+              "pump": 1,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH07",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "debounced-manual-uart-gpio",
+            "zone1": [
+              {
+                "now": 384,
+                "auto": 0,
+                "source": 1,
+                "dry1": 0,
+                "dry2": 0,
+                "zone": 1,
+                "valve1": 1,
+                "valve2": 0,
+                "pump": 1,
+                "timeout": 0,
+                "rest": 0,
+                "inhibit": 0
+              },
+              {
+                "now": 533,
+                "auto": 0,
+                "source": 1,
+                "dry1": 0,
+                "dry2": 0,
+                "zone": 0,
+                "valve1": 0,
+                "valve2": 0,
+                "pump": 0,
+                "timeout": 0,
+                "rest": 1,
+                "inhibit": 0
+              }
+            ],
+            "zone2": [
+              {
+                "now": 384,
+                "auto": 0,
+                "source": 1,
+                "dry1": 0,
+                "dry2": 0,
+                "zone": 2,
+                "valve1": 0,
+                "valve2": 1,
+                "pump": 1,
+                "timeout": 0,
+                "rest": 0,
+                "inhibit": 0
+              },
+              {
+                "now": 533,
+                "auto": 0,
+                "source": 1,
+                "dry1": 0,
+                "dry2": 0,
+                "zone": 0,
+                "valve1": 0,
+                "valve2": 0,
+                "pump": 0,
+                "timeout": 0,
+                "rest": 1,
+                "inhibit": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "GH08",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "manual-arbitration",
+            "active": {
+              "now": 384,
+              "auto": 0,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 0,
+              "zone": 1,
+              "valve1": 1,
+              "valve2": 0,
+              "pump": 1,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            },
+            "released": {
+              "now": 533,
+              "auto": 0,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 1,
+              "inhibit": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH09",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "debounced-source-uart-gpio",
+            "gh": {
+              "now": 484,
+              "auto": 1,
+              "source": 0,
+              "dry1": 1,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 1,
+              "inhibit": 1
+            },
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": true
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH10",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "manual-source-loss",
+            "active": {
+              "now": 384,
+              "auto": 0,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 0,
+              "zone": 2,
+              "valve1": 0,
+              "valve2": 1,
+              "pump": 1,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            },
+            "lost": {
+              "now": 533,
+              "auto": 0,
+              "source": 0,
+              "dry1": 0,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 1,
+              "inhibit": 1
+            },
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": true
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH11",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "manual-rearm-rest",
+            "held": {
+              "now": 633,
+              "auto": 0,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 1,
+              "inhibit": 1
+            },
+            "repress": {
+              "now": 883,
+              "auto": 0,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 1,
+              "inhibit": 0
+            },
+            "afterRest": {
+              "now": 15984,
+              "auto": 0,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 0,
+              "zone": 2,
+              "valve1": 0,
+              "valve2": 1,
+              "pump": 1,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH12",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "latched-timeout",
+            "gh": {
+              "now": 10238,
+              "auto": 1,
+              "source": 1,
+              "dry1": 1,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 1,
+              "rest": 1,
+              "inhibit": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH13",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "reset-release-rearm",
+            "cleared": {
+              "now": 12889,
+              "auto": 0,
+              "source": 1,
+              "dry1": 1,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 1,
+              "inhibit": 1
+            },
+            "released": {
+              "now": 13038,
+              "auto": 0,
+              "source": 1,
+              "dry1": 1,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 1,
+              "inhibit": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH14",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "mode-debounce-uart",
+            "before": {
+              "now": 384,
+              "auto": 1,
+              "source": 1,
+              "dry1": 1,
+              "dry2": 0,
+              "zone": 1,
+              "valve1": 1,
+              "valve2": 0,
+              "pump": 1,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            },
+            "manual": {
+              "now": 484,
+              "auto": 0,
+              "source": 1,
+              "dry1": 1,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 1,
+              "inhibit": 0
+            },
+            "auto": {
+              "now": 633,
+              "auto": 1,
+              "source": 1,
+              "dry1": 1,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 1,
+              "inhibit": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH15",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "dht-gpio",
+            "dht": {
+              "componentId": "greenhouse-dht",
+              "pin": 7,
+              "releaseCycle": 167001043,
+              "startPulseCycles": 322888,
+              "responseStartCycle": 167001363,
+              "responseEndCycle": 167064051,
+              "temperatureC": 18,
+              "humidityPercent": 50,
+              "payload": [
+                1,
+                244,
+                0,
+                180,
+                169
+              ]
+            },
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": false,
+              "D11": true,
+              "D12": true,
+              "D13": false
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH16",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "dht-gpio-rtc",
+            "dht": {
+              "componentId": "greenhouse-dht",
+              "pin": 7,
+              "releaseCycle": 102658189,
+              "startPulseCycles": 324819,
+              "responseStartCycle": 102658509,
+              "responseEndCycle": 102721869,
+              "temperatureC": 24,
+              "humidityPercent": 50,
+              "payload": [
+                1,
+                244,
+                0,
+                240,
+                229
+              ]
+            },
+            "gl": {
+              "now": 6540,
+              "outside": 800,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 43206,
+              "request": 1,
+              "light": 1
+            },
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": false,
+              "D11": false,
+              "D12": true,
+              "D13": false
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH17",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "adc-dht-gpio",
+            "insideAdc": 461,
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": false,
+              "D11": true,
+              "D12": false,
+              "D13": false
+            },
+            "gl": {
+              "now": 10740,
+              "outside": 800,
+              "inside": 461,
+              "acquired": 1,
+              "civil": 43210,
+              "request": 0,
+              "light": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH18",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "dht-gpio",
+            "temperatureC": 28,
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": false
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH19",
+        "status": "FAIL",
+        "evidence": [
+          {
+            "kind": "dht-hysteresis-gpio-trace",
+            "heatSet": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": false,
+              "D11": true,
+              "D12": false,
+              "D13": false
+            },
+            "heatBand": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": false,
+              "D11": true,
+              "D12": false,
+              "D13": false
+            },
+            "heatClear": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": false,
+              "D11": false,
+              "D12": false,
+              "D13": false
+            },
+            "fanBand": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": false
+            },
+            "fanClear": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": false,
+              "D11": false,
+              "D12": false,
+              "D13": false
+            },
+            "overlapEvents": [
+              {
+                "startCycle": 230835625,
+                "enteredByPin": 10,
+                "endCycle": 230835976,
+                "exitedByPin": 11,
+                "cycles": 351,
+                "microseconds": 21.9375
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "GH20",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "overtemperature-gpio",
+            "hotSet": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": true
+            },
+            "hotClear": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": false
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH21",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "climate-fault-gpio",
+            "fresh": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": false,
+              "D11": true,
+              "D12": false,
+              "D13": false
+            },
+            "stale": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": true
+            },
+            "staleAgeMs": 6000.9435
+          }
+        ]
+      },
+      {
+        "id": "GH22",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "light-hysteresis-dwell-uart",
+            "low": {
+              "now": 6184,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 43206,
+              "request": 1,
+              "light": 1
+            },
+            "high": {
+              "now": 6435,
+              "outside": 100,
+              "inside": 461,
+              "acquired": 1,
+              "civil": 43206,
+              "request": 0,
+              "light": 1
+            },
+            "afterDwell": {
+              "now": 11685,
+              "outside": 900,
+              "inside": 461,
+              "acquired": 1,
+              "civil": 43211,
+              "request": 0,
+              "light": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH23",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "independent-adc-uart",
+            "before": {
+              "now": 6435,
+              "outside": 100,
+              "inside": 461,
+              "acquired": 1,
+              "civil": 43206,
+              "request": 0,
+              "light": 1
+            },
+            "after": {
+              "now": 6585,
+              "outside": 900,
+              "inside": 461,
+              "acquired": 1,
+              "civil": 43206,
+              "request": 0,
+              "light": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH24",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "rtc-photoperiod",
+            "before": {
+              "now": 5884,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 21599,
+              "request": 1,
+              "light": 0
+            },
+            "after": {
+              "now": 6184,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 21600,
+              "request": 1,
+              "light": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH25",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "rtc-photoperiod",
+            "before": {
+              "now": 5884,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 79199,
+              "request": 1,
+              "light": 1
+            },
+            "after": {
+              "now": 6184,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 79200,
+              "request": 1,
+              "light": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH26",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "rtc-fault-recovery",
+            "before": {
+              "now": 9634,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 43206,
+              "request": 1,
+              "light": 1
+            },
+            "stale": {
+              "now": 9684,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 0,
+              "civil": 43206,
+              "request": 1,
+              "light": 0
+            },
+            "recovered": {
+              "now": 13885,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 43209,
+              "request": 1,
+              "light": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH27",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "i2c-rtc-lcd",
+            "ds3231": {
+              "componentId": "greenhouse-rtc",
+              "address": 104,
+              "dateTime": "2028-03-01T00:00:02Z",
+              "registerPointer": 7,
+              "faultMode": "none",
+              "status": 0
+            },
+            "lines": [
+              "A TEMP INVALID      ",
+              "T:--.-C H:---% F:1  ",
+              "P0 V00 F1 H0 R0     ",
+              "I78 O78 L0 00:00    "
+            ],
+            "i2cDrops": 0
+          }
+        ]
+      },
+      {
+        "id": "GH28",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "decoded-i2c-lcd-priority",
+            "states": [
+              {
+                "state": "timeout-over-climate-clock",
+                "lines": [
+                  "A TIMEOUT           ",
+                  "T:--.-C H:---% F:1  ",
+                  "S1: 30% S2: 55%     ",
+                  "I78 O78 L0 --:--    "
+                ]
+              },
+              {
+                "state": "climate-valid-after-overtemp-clear",
+                "lines": [
+                  "A OVER TEMP         ",
+                  "T:35.0C H:50%       ",
+                  "S1: 55% S2: 55%     ",
+                  "I45 O78 L0 12:00    "
+                ]
+              },
+              {
+                "state": "empty-over-temp-clock",
+                "lines": [
+                  "A EMPTY             ",
+                  "T:--.-C H:---% F:1  ",
+                  "S1: 55% S2: 55%     ",
+                  "I78 O78 L0 --:--    "
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "GH29",
+        "status": "FAIL",
+        "evidence": [
+          {
+            "kind": "measured-timing-aggregate",
+            "restMs": 15049,
+            "timeoutMs": 10000,
+            "staleClimateMs": 6000.9435,
+            "dhtTransactionSpacingsMs": [
+              4001.523625,
+              4021.428375,
+              3985.30375,
+              4003.83725,
+              4002.0875625,
+              4000.48975,
+              4024.5316875,
+              3985.2161875,
+              4002.0494375,
+              4002.804
+            ],
+            "requiredDhtCadenceMs": 2000
+          }
+        ]
+      },
+      {
+        "id": "GH30",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "artifact-identity",
+            "hexSha256": "56fd2e2d5d574f71259e4ce30fcdc193be943e82a166b27d5bd6a24cad518378",
+            "sourceSha256": "1af8b1dfc3f251e27bdf6b9170afa1a3899d826241125f6152723e07d60b34dd",
+            "inputIdentity": "9814f94186e2d380018c961a7e37bca1054ceb3e43318ed7d862a7ff69f6bdc6",
+            "artifactIdentity": "8e94c7f02517870c30e2977166b1ebca96c2e69cb95064c71b1d566eaa814069"
+          }
+        ]
+      },
+      {
+        "id": "GH31",
+        "status": "FAIL",
+        "evidence": [
+          {
+            "kind": "all-scenario-uart-gpio-traces",
+            "scenarios": 18,
+            "invariantFailures": [
+              {
+                "scenario": 10,
+                "invariant": "heat-fan",
+                "overlapEvents": [
+                  {
+                    "startCycle": 230835625,
+                    "enteredByPin": 10,
+                    "endCycle": 230835976,
+                    "exitedByPin": 11,
+                    "cycles": 351,
+                    "microseconds": 21.9375
+                  }
+                ]
+              },
+              {
+                "scenario": 11,
+                "invariant": "heat-fan",
+                "overlapEvents": [
+                  {
+                    "startCycle": 198642606,
+                    "enteredByPin": 10,
+                    "endCycle": 198642957,
+                    "exitedByPin": 11,
+                    "cycles": 351,
+                    "microseconds": 21.9375
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "GH32",
+        "status": "NOT_RUN",
+        "evidence": [
+          {
+            "kind": "runtime-limit",
+            "code": "MILLIS_ROLLOVER_TIME_WARP_UNAVAILABLE",
+            "detail": "Exact artifact has no test-clock injection; 2^32 ms would require 68,719,476,736,000 AVR cycles."
+          }
+        ]
+      }
+    ]
+  },
+  "boundary": {
+    "counts": {
+      "PASS": 29,
+      "FAIL": 1,
+      "NOT_RUN": 0
+    },
+    "rows": [
+      {
+        "id": "GH05/soil_dry_lower",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "adc-uart-gpio",
+            "adc": 306,
+            "gh": {
+              "now": 533,
+              "auto": 1,
+              "source": 1,
+              "dry1": 1,
+              "dry2": 0,
+              "zone": 1,
+              "valve1": 1,
+              "valve2": 0,
+              "pump": 1,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            },
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": true,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": true,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": true
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH05/soil_dry_upper",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "adc-uart",
+            "adc": 307,
+            "gh": {
+              "now": 384,
+              "auto": 1,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH05/soil_wet_lower",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "adc-uart",
+            "adc": 562,
+            "gh": {
+              "now": 633,
+              "auto": 1,
+              "source": 1,
+              "dry1": 1,
+              "dry2": 0,
+              "zone": 1,
+              "valve1": 1,
+              "valve2": 0,
+              "pump": 1,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH05/soil_wet_upper",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "adc-uart-gpio",
+            "adc": 563,
+            "gh": {
+              "now": 734,
+              "auto": 1,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 1,
+              "inhibit": 0
+            },
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": true
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH19/heater_set",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "dht-gpio",
+            "temperatureC": 18,
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": false,
+              "D11": true,
+              "D12": true,
+              "D13": false
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH19/heater_clear",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "dht-gpio",
+            "temperatureC": 20,
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": false,
+              "D11": false,
+              "D12": false,
+              "D13": false
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH19/fan_set",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "dht-gpio",
+            "temperatureC": 28,
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": false
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH19/fan_clear",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "dht-gpio",
+            "temperatureC": 26,
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": false,
+              "D11": false,
+              "D12": false,
+              "D13": false
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH20/overtemp_set",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "dht-gpio",
+            "temperatureC": 35,
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": true
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH20/overtemp_clear",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "dht-gpio",
+            "temperatureC": 33,
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": false
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH21/climate_stale",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "dht-deadline-gpio",
+            "lastResponseEndCycle": 102627510,
+            "observedAtAgeMs": 5999,
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": false,
+              "D11": true,
+              "D12": false,
+              "D13": false
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH21/climate_stale_boundary",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "dht-deadline-gpio-trace",
+            "staleAgeMs": 6000.9435,
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": false,
+              "D13": true
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH21/climate_recovery",
+        "status": "FAIL",
+        "evidence": [
+          {
+            "kind": "dht-recovery",
+            "spacingMs": 3997.958,
+            "transactions": [
+              {
+                "releaseCycle": 230629797,
+                "responseEndCycle": 230692805
+              },
+              {
+                "releaseCycle": 294597125,
+                "responseEndCycle": 294660133
+              }
+            ],
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": false,
+              "D11": true,
+              "D12": false,
+              "D13": false
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH22/light_low_lower",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "adc-rtc-uart-gpio",
+            "adc": 358,
+            "gl": {
+              "now": 6184,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 43206,
+              "request": 1,
+              "light": 1
+            },
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": true,
+              "D13": true
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH22/light_low_upper",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "adc-rtc-uart",
+            "adc": 359,
+            "gl": {
+              "now": 6085,
+              "outside": 100,
+              "inside": 359,
+              "acquired": 1,
+              "civil": 43205,
+              "request": 0,
+              "light": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH22/light_high_lower",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "adc-rtc-uart",
+            "adc": 460,
+            "gl": {
+              "now": 6335,
+              "outside": 100,
+              "inside": 460,
+              "acquired": 1,
+              "civil": 43206,
+              "request": 1,
+              "light": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH22/light_high_upper",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "adc-rtc-uart-dwell",
+            "adc": 461,
+            "gl": {
+              "now": 6435,
+              "outside": 100,
+              "inside": 461,
+              "acquired": 1,
+              "civil": 43206,
+              "request": 0,
+              "light": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH24/day_before",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "rtc-uart-gpio",
+            "gl": {
+              "now": 5884,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 21599,
+              "request": 1,
+              "light": 0
+            },
+            "pins": {
+              "D0": false,
+              "D1": false,
+              "D2": false,
+              "D3": true,
+              "D4": true,
+              "D5": true,
+              "D6": true,
+              "D7": true,
+              "D8": false,
+              "D9": false,
+              "D10": true,
+              "D11": false,
+              "D12": true,
+              "D13": true
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH24/day_start",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "rtc-uart-gpio",
+            "gl": {
+              "now": 6184,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 21600,
+              "request": 1,
+              "light": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH25/day_last",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "rtc-uart-gpio",
+            "gl": {
+              "now": 5884,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 79199,
+              "request": 1,
+              "light": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH25/day_end",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "rtc-uart-gpio",
+            "gl": {
+              "now": 6184,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 79200,
+              "request": 1,
+              "light": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH26/clock_stale_before",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "rtc-frozen-uart",
+            "advancedAtMs": 6184,
+            "gl": {
+              "now": 9634,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 43206,
+              "request": 1,
+              "light": 1
+            },
+            "ageMs": 3450
+          }
+        ]
+      },
+      {
+        "id": "GH26/clock_stale_boundary",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "rtc-frozen-uart-gpio",
+            "advancedAtMs": 6184,
+            "gl": {
+              "now": 9684,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 0,
+              "civil": 43206,
+              "request": 1,
+              "light": 0
+            },
+            "ageMs": 3500
+          }
+        ]
+      },
+      {
+        "id": "GH26/clock_recovery",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "rtc-reacquisition-uart-off-dwell",
+            "gl": {
+              "now": 13885,
+              "outside": 100,
+              "inside": 358,
+              "acquired": 1,
+              "civil": 43209,
+              "request": 1,
+              "light": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH12/timeout_before",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "uart-deadline",
+            "runStart": 238,
+            "gh": {
+              "now": 10188,
+              "auto": 1,
+              "source": 1,
+              "dry1": 1,
+              "dry2": 0,
+              "zone": 1,
+              "valve1": 1,
+              "valve2": 0,
+              "pump": 1,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            },
+            "ageMs": 9950
+          }
+        ]
+      },
+      {
+        "id": "GH12/timeout_boundary",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "uart-deadline",
+            "runStart": 238,
+            "gh": {
+              "now": 10238,
+              "auto": 1,
+              "source": 1,
+              "dry1": 1,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 1,
+              "rest": 1,
+              "inhibit": 0
+            },
+            "ageMs": 10000
+          }
+        ]
+      },
+      {
+        "id": "GH06/rest_before",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "uart-deadline",
+            "restAt": 434,
+            "gh": {
+              "now": 15284,
+              "auto": 1,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 1,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 1,
+              "inhibit": 0
+            },
+            "ageMs": 14850
+          }
+        ]
+      },
+      {
+        "id": "GH06/rest_boundary",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "uart-deadline",
+            "restAt": 434,
+            "gh": {
+              "now": 15483,
+              "auto": 1,
+              "source": 1,
+              "dry1": 0,
+              "dry2": 1,
+              "zone": 2,
+              "valve1": 0,
+              "valve2": 1,
+              "pump": 1,
+              "timeout": 0,
+              "rest": 0,
+              "inhibit": 0
+            },
+            "ageMs": 15049
+          }
+        ]
+      },
+      {
+        "id": "GH13/reset_before",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "uart-reset-hold",
+            "gh": {
+              "now": 12688,
+              "auto": 0,
+              "source": 1,
+              "dry1": 1,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 1,
+              "rest": 1,
+              "inhibit": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "GH13/reset_boundary",
+        "status": "PASS",
+        "evidence": [
+          {
+            "kind": "uart-reset-hold",
+            "gh": {
+              "now": 12889,
+              "auto": 0,
+              "source": 1,
+              "dry1": 1,
+              "dry2": 0,
+              "zone": 0,
+              "valve1": 0,
+              "valve2": 0,
+              "pump": 0,
+              "timeout": 0,
+              "rest": 1,
+              "inhibit": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "source_repairs_required": [
+    "GH19",
+    "GH29",
+    "GH31",
+    "GH21/climate_recovery"
+  ],
+  "limitations": [
+    {
+      "id": "GH32",
+      "evidence": [
+        {
+          "kind": "runtime-limit",
+          "code": "MILLIS_ROLLOVER_TIME_WARP_UNAVAILABLE",
+          "detail": "Exact artifact has no test-clock injection; 2^32 ms would require 68,719,476,736,000 AVR cycles."
+        }
+      ]
+    }
+  ],
+  "interpretation": "Measured execution of the exact compiled baseline in a simulator, not physical hardware. Corrected experimental/native builds are separate and receive no result credit here."
+}
