@@ -2,8 +2,8 @@
 
 These concrete demonstration choices refine SPEC-DRAFT.md. They are the
 implementation and test target, not evidence of an implemented controller.
-Native component feasibility, complete Uno memory use, RTC support and actual
-Lab execution remain open gates. Preserve the full project scope if a gate fails.
+Native construction and Uno compilation now have recorded source/build evidence.
+RTC simulation support, actual Lab execution and runtime memory use remain open gates. Preserve the full project scope if a gate fails.
 
 ## Input interpretation and time
 

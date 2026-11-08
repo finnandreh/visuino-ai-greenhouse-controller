@@ -6,7 +6,7 @@ A modular Arduino Uno teaching project: two-zone irrigation, source-empty protec
 
 ## Current verification
 
-The native Visuino candidate compiles successfully with Visuino8.0.0.169 for Uno:23802bytes flash and1059bytes staticRAM. A layout-only revision produces the exact same loadable HEX SHA256 c007a3d47cea9f47ed5ed0efb005a95876fe1d68c1f49e37a8202a0fd094cdb6.
+This candidate is the complete 92-component project rebuilt from empty during recording. It compiles successfully with Visuino8.0.0.169 for Uno:23808bytes flash and1059bytes staticRAM, leaving989bytes for the runtime stack and heap. Source SHA256:36a0b0d90f6690281db4cb6bf9358aa3a363727904ae47cf977fbdeea78cda79. Loadable HEX SHA256:56fd2e2d5d574f71259e4ce30fcdc193be943e82a166b27d5bd6a24cad518378. This is a different build from the earlier reference candidate; it has not yet passed whole-program Lab execution.
 
 Whole-program Circuit Lab execution, GPIO/timing and runtime memory headroom are NOT VERIFIED. All32matrix checks and30boundary cases remain NOT_RUN. RTC simulation support is a pending dependency. This candidate is not a completed tutorial release. Video and Instructables links are not yet available. The [homepage project page](https://finnandre.no/ressurser/visuino-ai-drivhus/) describes the compiled candidate and its pending runtime tests.
 
